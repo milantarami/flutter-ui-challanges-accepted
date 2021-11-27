@@ -4,6 +4,7 @@ import './home.dart';
 
 // profiles
 import './src/profile/profile_1.dart';
+import './src/profile/profile_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
       home: const Home(),
       routes: {
         Profile1.routeName: (context) => const Profile1(),
+        Profile2.routeName: (context) => Profile2(),
       },
       debugShowCheckedModeBanner: false,
     );

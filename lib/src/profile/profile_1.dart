@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Profile1 extends StatelessWidget {
-  static const String routeName = '/profiles/profile1';
+  static const String routeName = '/profiles/profile2';
 
   const Profile1({Key? key}) : super(key: key);
 
@@ -31,10 +31,10 @@ class Profile1 extends StatelessWidget {
                 // TODO: Add a profile image
                 Row(
                   children: <Widget>[
-                    Expanded(
-                      child: Container(
+                    const Expanded(
+                      child: SizedBox(
                         height: 50,
-                        child: const CircleAvatar(
+                        child: CircleAvatar(
                           backgroundColor: Color(0xFFE53935),
                           child: Icon(Icons.phone),
                         ),
@@ -54,10 +54,10 @@ class Profile1 extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Expanded(
-                      child: Container(
+                    const Expanded(
+                      child: SizedBox(
                         height: 50,
-                        child: const CircleAvatar(
+                        child: CircleAvatar(
                           backgroundColor: Color(0xFFE53935),
                           child: Icon(Icons.message),
                         ),
@@ -162,31 +162,29 @@ class Profile1 extends StatelessWidget {
             ),
           ),
           // TODO: Other Details
-          Container(
-            child: Column(
-              children: const <Widget>[
-                ListTile(
-                  title:
-                      Text('Email', style: TextStyle(color: Color(0xFFF44336))),
-                  subtitle: Text('mailtomilantarami@gmail.com'),
-                ),
-                ListTile(
-                  title:
-                      Text('Phone', style: TextStyle(color: Color(0xFFF44336))),
-                  subtitle: Text('+977-98XXXXXXXX'),
-                ),
-                ListTile(
-                  title: Text('Twitter',
-                      style: TextStyle(color: Color(0xFFF44336))),
-                  subtitle: Text('@_milantarami'),
-                ),
-                ListTile(
-                  title: Text('Facebook',
-                      style: TextStyle(color: Color(0xFFF44336))),
-                  subtitle: Text('facebook.com/milantarami.dev'),
-                )
-              ],
-            ),
+          Column(
+            children: const <Widget>[
+              ListTile(
+                title:
+                    Text('Email', style: TextStyle(color: Color(0xFFF44336))),
+                subtitle: Text('mailtomilantarami@gmail.com'),
+              ),
+              ListTile(
+                title:
+                    Text('Phone', style: TextStyle(color: Color(0xFFF44336))),
+                subtitle: Text('+977-98XXXXXXXX'),
+              ),
+              ListTile(
+                title:
+                    Text('Twitter', style: TextStyle(color: Color(0xFFF44336))),
+                subtitle: Text('@_milantarami'),
+              ),
+              ListTile(
+                title: Text('Facebook',
+                    style: TextStyle(color: Color(0xFFF44336))),
+                subtitle: Text('facebook.com/milantarami.dev'),
+              )
+            ],
           ),
         ],
       ),

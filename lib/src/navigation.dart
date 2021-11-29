@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../src/profile/profile_1.dart';
 import '../src/profile/profile_2.dart';
 import '../src/profile/profile_3.dart';
+import '../src/profile/profile_4.dart';
 
 class Navigation extends StatelessWidget {
   const Navigation({Key? key}) : super(key: key);
@@ -36,6 +37,12 @@ class Navigation extends StatelessWidget {
                   title: const Text('Profile 3'),
                   onTap: () {
                     Navigator.pushNamed(context, Profile3.routeName);
+                  },
+                ),
+                ListTile(
+                  title: const Text('Profile 4'),
+                  onTap: () {
+                    Navigator.pushNamed(context, Profile4.routeName);
                   },
                 )
               ],

@@ -7,8 +7,29 @@ import '../src/profile/profile_4.dart';
 import '../src/profile/profile_5.dart';
 import '../src/profile/profile_6.dart';
 
+class Menu {
+  String label;
+  String? routeName;
+  List<Menu> children;
+  Menu({required this.label, this.routeName, this.children = const <Menu>[]});
+}
+
 class Navigation extends StatelessWidget {
-  const Navigation({Key? key}) : super(key: key);
+  Navigation({Key? key}) : super(key: key);
+
+  final List<Menu> _menus = [
+    Menu(
+      label: 'Profile',
+      children: [
+        Menu(label: 'Profile 1', routeName: Profile1.routeName),
+        Menu(label: 'Profile 2', routeName: Profile2.routeName),
+        Menu(label: 'Profile 3', routeName: Profile3.routeName),
+        Menu(label: 'Profile 4', routeName: Profile4.routeName),
+        Menu(label: 'Profile 5', routeName: Profile5.routeName),
+        Menu(label: 'Profile 6', routeName: Profile6.routeName),
+      ],
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -19,51 +40,28 @@ class Navigation extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            // Profile UI
-            ExpansionTile(
-              title: const Text('Profile'),
-              children: <Widget>[
-                ListTile(
-                  title: const Text('Profile 1'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile1.routeName);
-                  },
-                ),
-                ListTile(
-                  title: const Text('Profile 2'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile2.routeName);
-                  },
-                ),
-                ListTile(
-                  title: const Text('Profile 3'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile3.routeName);
-                  },
-                ),
-                ListTile(
-                  title: const Text('Profile 4'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile4.routeName);
-                  },
-                ),
-                ListTile(
-                  title: const Text('Profile 5'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile5.routeName);
-                  },
-                ),
-                ListTile(
-                  title: const Text('Profile 6'),
-                  onTap: () {
-                    Navigator.pushNamed(context, Profile6.routeName);
-                  },
-                )
-              ],
-            )
+            for (var item in _menus) _buildMenu(context, item)
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildMenu(BuildContext context, Menu menu) {
+    return ExpansionTile(
+      title: const Text('Profile'),
+      children: <Widget>[
+        for (var subMenu in menu.children) _buildSubMenu(context, subMenu)
+      ],
+    );
+  }
+
+  Widget _buildSubMenu(BuildContext context, Menu menu) {
+    return ListTile(
+      title: Text(menu.label),
+      onTap: () {
+        Navigator.pushNamed(context, menu.routeName.toString());
+      },
     );
   }
 }

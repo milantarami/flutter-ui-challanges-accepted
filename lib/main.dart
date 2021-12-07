@@ -7,6 +7,7 @@ import './src/profile/profile_1.dart';
 import './src/profile/profile_2.dart';
 import './src/profile/profile_3.dart';
 import './src/profile/profile_4.dart';
+import './src/profile/profile_5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -38,6 +39,7 @@ class MyApp extends StatelessWidget {
         Profile2.routeName: (context) => Profile2(),
         Profile3.routeName: (context) => const Profile3(),
         Profile4.routeName: (context) => const Profile4(),
+        Profile5.routeName: (context) => Profile5(),
       },
       debugShowCheckedModeBanner: false,
     );

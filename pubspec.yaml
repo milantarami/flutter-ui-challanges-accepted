@@ -84,6 +84,15 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+  fonts:
+    - family: Josefin Sans
+      fonts:
+        - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf
+        - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf
+        - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf
+        - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Semibold.ttf
+        - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

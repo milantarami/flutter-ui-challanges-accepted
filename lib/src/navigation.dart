@@ -5,6 +5,7 @@ import '../src/profile/profile_2.dart';
 import '../src/profile/profile_3.dart';
 import '../src/profile/profile_4.dart';
 import '../src/profile/profile_5.dart';
+import '../src/profile/profile_6.dart';
 
 class Navigation extends StatelessWidget {
   const Navigation({Key? key}) : super(key: key);
@@ -50,6 +51,12 @@ class Navigation extends StatelessWidget {
                   title: const Text('Profile 5'),
                   onTap: () {
                     Navigator.pushNamed(context, Profile5.routeName);
+                  },
+                ),
+                ListTile(
+                  title: const Text('Profile 6'),
+                  onTap: () {
+                    Navigator.pushNamed(context, Profile6.routeName);
                   },
                 )
               ],

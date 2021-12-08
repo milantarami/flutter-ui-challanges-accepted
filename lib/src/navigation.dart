@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges_accepted/src/authentication/login1/login_1_index.dart';
 
 import '../src/profile/profile_1.dart';
 import '../src/profile/profile_2.dart';
@@ -6,6 +7,7 @@ import '../src/profile/profile_3.dart';
 import '../src/profile/profile_4.dart';
 import '../src/profile/profile_5.dart';
 import '../src/profile/profile_6.dart';
+import '../src/authentication/login1/login_1_index.dart';
 
 class Menu {
   String label;
@@ -29,6 +31,12 @@ class Navigation extends StatelessWidget {
         Menu(label: 'Profile 6', routeName: Profile6.routeName),
       ],
     ),
+    Menu(
+      label: 'Authentication',
+      children: [
+        Menu(label: 'Login 1', routeName: Login1Index.routeName),
+      ],
+    ),
   ];
 
   @override
@@ -49,7 +57,7 @@ class Navigation extends StatelessWidget {
 
   Widget _buildMenu(BuildContext context, Menu menu) {
     return ExpansionTile(
-      title: const Text('Profile'),
+      title: Text(menu.label + ' ( ' + menu.children.length.toString() + ' ) '),
       children: <Widget>[
         for (var subMenu in menu.children) _buildSubMenu(context, subMenu)
       ],

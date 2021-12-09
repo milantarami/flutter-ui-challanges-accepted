@@ -3,16 +3,22 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "d6bc5a2a9fafd8a415c3b2d31e1fcb78",
+  "assets/AssetManifest.json": "20c2f38d4aa1d23649ba70bdbe582dd4",
+"assets/assets/fonts/Josefin_Sans/static/JosefinSans-Bold.ttf": "75d240293f611020f2885e035a705f4e",
+"assets/assets/fonts/Josefin_Sans/static/JosefinSans-Medium.ttf": "ddcdabcf927d0d57b5be33701b563828",
+"assets/assets/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf": "74ae0793945e421d248fe27905c248a3",
+"assets/assets/fonts/Josefin_Sans/static/JosefinSans-Semibold.ttf": "f5c12a8ff92995d15bc240053d60db48",
+"assets/assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf": "f2352c6140b18f3334bde93c34e53734",
 "assets/assets/images/caio-coelho-QRN47la37gw-unsplash.jpg": "6af15276b767a56caf2828c6ba71d9af",
 "assets/assets/images/eiliv-sonas-aceron-ZuIDLSz3XLg-unsplash.jpg": "e497bf6080cc58cb2ed079629ad23192",
 "assets/assets/images/hamed-foroutan-8WsfFDuK1l0-unsplash.jpg": "d309901ceec38f3412d5bb7d856556e1",
 "assets/assets/images/ian-dooley-hpTH5b6mo2s-unsplash.jpg": "4e2a594d097e5abee1a6168b68768f5f",
 "assets/assets/images/tom-barrett-M0AWNxnLaMw-unsplash.jpg": "686bbb68162dd2f62e34c9a487e2662b",
 "assets/assets/images/uriel-soberanes-MxVkWPiJALs-unsplash.jpg": "05ea6430d0baf7bc4895ea62e9bb1c3a",
-"assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
+"assets/assets/svg/undraw_romantic_getaway_re_3f45.svg": "857fb4ba9f2816a5ba298b8de8042ade",
+"assets/FontManifest.json": "5b73c26c31165f9e764ac1f28e843d5c",
 "assets/fonts/MaterialIcons-Regular.otf": "4e6447691c9509f7acdbf8a931a85ca1",
-"assets/NOTICES": "64350073605ff678982a9d4269da0e0f",
+"assets/NOTICES": "dceb21c0082e42ac2da238383e28ce84",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "b37ae0f14cbc958316fac4635383b6e8",
 "assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "5178af1d278432bec8fc830d50996d6f",
@@ -22,9 +28,9 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "51ca013212dfa00e4c4c800e8c7a8619",
-"/": "51ca013212dfa00e4c4c800e8c7a8619",
-"main.dart.js": "2b557c07b74bac11232bef3f753191d5",
+"index.html": "b3d71fa69e472be072b162dd47b491ce",
+"/": "b3d71fa69e472be072b162dd47b491ce",
+"main.dart.js": "033881072bc0dc91888bf10a75631a35",
 "manifest.json": "41120bb4f09616fbc7f40d28a0305323",
 "version.json": "fbba2063ad3e7d9185b94d74e434f011"
 };

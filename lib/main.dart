@@ -47,8 +47,8 @@ class MyApp extends StatelessWidget {
         Profile5.routeName: (context) => Profile5(),
         Profile6.routeName: (context) => Profile6(),
         //login
-        Login1Index.routeName: (context) => Login1Index(),
-        Login1.routeName: (context) => Login1(),
+        Login1Index.routeName: (context) => const Login1Index(),
+        Login1.routeName: (context) => const Login1(),
       },
       debugShowCheckedModeBanner: false,
     );

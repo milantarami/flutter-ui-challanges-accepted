@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_svg/flutter_svg.dart';
 
+import './login_1.dart';
 import './config/theme.dart';
 import './widgets/cool_button.dart';
 
@@ -67,19 +68,25 @@ class Login1Index extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Expanded(
-                    child: _coolButton(
-                      context,
-                      'Register',
-                      Login1Theme.white,
-                      Login1Theme.grey1,
+                    child: CoolButton(
+                      context: context,
+                      bgColor: Login1Theme.white,
+                      textColor: Login1Theme.grey1,
+                      label: 'Register',
+                      onTap: () {
+                        Navigator.of(context).pushNamed(Login1.routeName);
+                      },
                     ),
                   ),
                   Expanded(
-                    child: _coolButton(
-                      context,
-                      'Login',
-                      Login1Theme.grey1,
-                      Login1Theme.white,
+                    child: CoolButton(
+                      context: context,
+                      bgColor: Login1Theme.grey1,
+                      textColor: Login1Theme.white,
+                      label: 'Login',
+                      onTap: () {
+                        Navigator.of(context).pushNamed(Login1.routeName);
+                      },
                     ),
                   ),
                 ],
@@ -113,9 +120,4 @@ class Login1Index extends StatelessWidget {
       ),
     );
   }
-}
-
-class CoolButton {
-  @override
-  Widget build() {}
 }

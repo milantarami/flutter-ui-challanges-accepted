@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 class CoolButton extends StatelessWidget {
@@ -8,6 +6,7 @@ class CoolButton extends StatelessWidget {
   final String label;
   final double borderRadius;
   final BuildContext context;
+  final Function onTap;
 
   const CoolButton({
     Key? key,
@@ -15,12 +14,14 @@ class CoolButton extends StatelessWidget {
     required this.bgColor,
     required this.textColor,
     required this.label,
+    required this.onTap,
     this.borderRadius = 12.0,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      onTap: () => onTap(),
       child: Container(
         height: 55,
         decoration: BoxDecoration(

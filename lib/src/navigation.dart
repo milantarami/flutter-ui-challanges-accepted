@@ -8,6 +8,7 @@ import '../src/profile/profile_4.dart';
 import '../src/profile/profile_5.dart';
 import '../src/profile/profile_6.dart';
 import '../src/authentication/login1/login_1_index.dart';
+import '../src/authentication/login2/login_2_index.dart';
 
 class Menu {
   String label;
@@ -35,6 +36,7 @@ class Navigation extends StatelessWidget {
       label: 'Authentication',
       children: [
         Menu(label: 'Login 1', routeName: Login1Index.routeName),
+        Menu(label: 'Login 2', routeName: Login2Index.routeName),
       ],
     ),
   ];

@@ -13,6 +13,8 @@ import './src/profile/profile_6.dart';
 //login
 import './src/authentication/login1/login_1.dart';
 import './src/authentication/login1/login_1_index.dart';
+import './src/authentication/login2/login_2.dart';
+import './src/authentication/login2/login_2_index.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +51,8 @@ class MyApp extends StatelessWidget {
         //login
         Login1Index.routeName: (context) => const Login1Index(),
         Login1.routeName: (context) => const Login1(),
+        Login2Index.routeName: (context) => const Login2Index(),
+        Login2.routeName: (context) => const Login2(),
       },
       debugShowCheckedModeBanner: false,
     );

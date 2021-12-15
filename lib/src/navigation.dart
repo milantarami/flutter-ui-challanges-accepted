@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_ui_challenges_accepted/src/authentication/login1/login_1_index.dart';
 
 import '../src/profile/profile_1.dart';
 import '../src/profile/profile_2.dart';
@@ -9,6 +8,7 @@ import '../src/profile/profile_5.dart';
 import '../src/profile/profile_6.dart';
 import '../src/authentication/login1/login_1_index.dart';
 import '../src/authentication/login2/login_2_index.dart';
+import '../src/travel/skyfly/screens/skyfly_getting_started.dart';
 
 class Menu {
   String label;
@@ -37,6 +37,12 @@ class Navigation extends StatelessWidget {
       children: [
         Menu(label: 'Login 1', routeName: Login1Index.routeName),
         Menu(label: 'Login 2', routeName: Login2Index.routeName),
+      ],
+    ),
+    Menu(
+      label: 'Travel',
+      children: [
+        Menu(label: 'Skyfly', routeName: SkyflyGettingStarted.routeName),
       ],
     ),
   ];

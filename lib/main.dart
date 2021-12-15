@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges_accepted/src/travel/skyfly/screens/skyfly_book.dart';
+import 'package:flutter_ui_challenges_accepted/src/travel/skyfly/screens/skyfly_getting_started.dart';
+import 'package:flutter_ui_challenges_accepted/src/travel/skyfly/screens/skyfly_home.dart';
 
 import './home.dart';
 
@@ -53,6 +56,11 @@ class MyApp extends StatelessWidget {
         Login1.routeName: (context) => const Login1(),
         Login2Index.routeName: (context) => const Login2Index(),
         Login2.routeName: (context) => const Login2(),
+
+        SkyflyGettingStarted.routeName: (context) =>
+            const SkyflyGettingStarted(),
+        SkyFlyHome.routeName: (context) => SkyFlyHome(),
+        SkyflyBook.routeName: (context) => const SkyflyBook()
       },
       debugShowCheckedModeBanner: false,
     );

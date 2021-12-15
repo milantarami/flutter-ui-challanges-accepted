@@ -95,6 +95,10 @@ flutter:
         - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Semibold.ttf
         - asset: assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf
 
+    - family: Phonk Contrast DEMO
+      fonts:
+        - asset: assets/fonts/PhonkContrastDEMO/SlavaAntipov-PhonkContrastDEMO.ttf
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

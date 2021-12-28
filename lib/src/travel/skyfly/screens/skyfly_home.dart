@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_challenges_accepted/src/travel/skyfly/screens/skyfly_book.dart';
 import 'dart:math';
 
 import '../config/skyfly_theme.dart';
@@ -167,7 +168,12 @@ class SkyFlyHome extends StatelessWidget {
         crossAxisCount: 2,
         children: [
           for (var location in _locations)
-            _buildLocationTile(context, location, 400)
+            InkWell(
+              child: _buildLocationTile(context, location, 400),
+              onTap: () {
+                Navigator.of(context).pushNamed(SkyflyBook.routeName);
+              },
+            )
         ],
       ),
     );
